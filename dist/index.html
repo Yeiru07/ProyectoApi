@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series y episodios</title>
+  <script type="module" crossorigin src="/proyectoApi/assets/index-C0q890Fa.js"></script>
+  <link rel="stylesheet" crossorigin href="/proyectoApi/assets/index-CX7LTQRU.css">
+</head>
+
+<body>
+    <main class="content">
+
+        <!-- Información de la serie seleccionada -->
+        <header></header>
+
+        <!-- Buscador -->
+        <section class="search">
+            <label for="searchType">Buscar serie por:</label>
+
+            <select id="searchType">
+                <option value="id">ID</option>
+                <option value="name">Nombre</option>
+            </select>
+
+            <label for="showId">ID o nombre de la serie</label>
+
+            <input
+                type="text"
+                id="showId"
+                class="taskInput"
+                placeholder="Ejemplo: 82"
+            >
+
+            <button type="button" class="taskButton">
+                Buscar serie
+            </button>
+        </section>
+
+        <!-- Tarjetas de resultados -->
+        <section class="search-results"></section>
+
+        <!-- Temporadas y episodios -->
+        <article class="episodes"></article>
+
+    </main>
+</body>
+
+</html>
