@@ -5,7 +5,7 @@ const prod = process.env.NODE_ENV === "production";
 
 export default defineConfig({
     root: "./src",
-    base: prod ? `/${path.basename(process.cwd())}/` : "./",
+    base: prod ? "/proyectoApi/" : "./",
     mode: prod ? "production" : "development",              /* index.html fuera de src/ */
     publicDir: "../public",
     plugins: [],
